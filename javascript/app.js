@@ -1,6 +1,6 @@
 function playSound(e) {
         const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-        const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
+        const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
         if (!audio) return; // will stop the function from running
         audio.currentTime = 0; // restarts to the beginning for multiple quick sound successions
         audio.play();
